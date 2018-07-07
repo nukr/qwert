@@ -54,9 +54,6 @@ func main() {
 }
 
 func resizer(w http.ResponseWriter, r *http.Request) {
-	start := time.Now()
-	defer fmt.Println(time.Since(start))
-
 	var buf []byte
 	var err error
 
@@ -134,6 +131,7 @@ func resizer(w http.ResponseWriter, r *http.Request) {
 }
 
 func imageMagickResize(req *requestInfo) []byte {
+	start := time.Now()
 
 	size := ""
 	if req.width > 0 {
@@ -157,6 +155,7 @@ func imageMagickResize(req *requestInfo) []byte {
 		return []byte{}
 	}
 
+	fmt.Println(time.Since(start))
 	return stdout
 }
 
