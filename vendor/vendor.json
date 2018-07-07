@@ -1,0 +1,31 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "KrIRJ4p3nRze4NcxfgX5+N9+D1M=",
+			"path": "github.com/go-kit/kit/log",
+			"revision": "e2d71a06a40aa95cb82ccd72e854893612c02db7",
+			"revisionTime": "2018-06-19T21:43:15Z"
+		},
+		{
+			"checksumSHA1": "KxX/Drph+byPXBFIXaCZaCOAnrU=",
+			"path": "github.com/go-logfmt/logfmt",
+			"revision": "390ab7935ee28ec6b286364bba9b4dd6410cb3d5",
+			"revisionTime": "2016-11-15T14:25:13Z"
+		},
+		{
+			"checksumSHA1": "luu+ud4XYZhlCoNnSAwCJlbh0Bg=",
+			"path": "github.com/go-stack/stack",
+			"revision": "259ab82a6cad3992b4e21ff5cac294ccb06474bc",
+			"revisionTime": "2017-11-12T03:14:02Z"
+		},
+		{
+			"checksumSHA1": "Z7UkM1SU60TW5Q2BgoY8Zgj63y4=",
+			"path": "gopkg.in/h2non/bimg.v1",
+			"revision": "02e621739c77c791d8c153f240b7a1f75b07816f",
+			"revisionTime": "2017-12-22T18:58:29Z"
+		}
+	],
+	"rootPath": "github.com/meepshop/go-resizer-vips"
+}
