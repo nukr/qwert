@@ -54,6 +54,8 @@ func main() {
 }
 
 func resizer(w http.ResponseWriter, r *http.Request) {
+	start := time.Now()
+	defer fmt.Println(time.Since(start))
 
 	var buf []byte
 	var err error
