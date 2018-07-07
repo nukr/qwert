@@ -131,8 +131,6 @@ func resizer(w http.ResponseWriter, r *http.Request) {
 }
 
 func imageMagickResize(req *requestInfo) []byte {
-	start := time.Now()
-
 	size := ""
 	if req.width > 0 {
 		size = fmt.Sprintf("%dx>", req.width)
@@ -155,11 +153,14 @@ func imageMagickResize(req *requestInfo) []byte {
 		return []byte{}
 	}
 
-	fmt.Println(time.Since(start))
 	return stdout
 }
 
 func bimgResize(req *requestInfo) []byte {
+	start := time.Now()
+	defer func() {
+		fmt.Println(time.Since(start))
+	}()
 
 	body, err := getImage(req)
 	if err != nil {
